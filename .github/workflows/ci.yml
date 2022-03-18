@@ -20,7 +20,7 @@ jobs:
         ports: ['5432:5432']
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
 
       - name: Setup Ruby 2.7
         uses: ruby/setup-ruby@v1
@@ -76,7 +76,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Deploy To Heroku
         uses: akhileshns/heroku-deploy@v3.6.8 # This is the action
         with:
